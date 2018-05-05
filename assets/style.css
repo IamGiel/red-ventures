@@ -1,0 +1,56 @@
+.top-level-links,
+.top-level {
+  background-color: #143e87;
+  color: white;
+  font-size: 17px;
+  width: 100%;
+  left: 0%;
+  line-height: 0em;
+  height: 10%;
+  position: relative;
+  top: 2%;
+}
+.top-right-links {
+  position: relative;
+  left: -5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  display: inline-block;
+  width: 61%;
+  float: right;
+  position: relative;
+  left: -12%;
+  height: 4em;
+}
+
+.nav-buttons-right {
+  float: right;
+}
+
+#logo,
+h1 {
+  color: #316fd8;
+  float: left;
+  display: inline-block;
+  /* top: 1em; */
+  line-height: 0em;
+}
+#montserrat {
+  font-family: "Montserrat", sans-serif;
+  color: #143f85;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+  top: 27px;
+}

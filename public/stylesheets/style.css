@@ -50,7 +50,7 @@ li a {
 }
 
 /* logo style */
-h1 {
+#logo-pool{
   font-family: "Passion One";
 }
 
@@ -168,6 +168,7 @@ img {
   position: relative;
   left: 10%;
   display: block;
+  text-align: center;
 }
 .card-top-divider {
   height: 0.3px;
@@ -193,3 +194,17 @@ a {
 .business-header {
   font-weight: bold;
 }
+
+/* card contents */
+
+.company-name{
+  font-family: "ABeeZee", sans-serif;
+  text-align: center;
+  font-weight: 100;
+}
+.phone{
+  font-size: 20px;
+}
+.phone-logo{
+  color: #65c9ca
+;}

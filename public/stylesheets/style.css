@@ -178,8 +178,9 @@ img {
   border-style: groove;
   border-color: #65c9ca;
   text-decoration: none;
-  padding: 14px;
-  margin-left: 2%;
+  padding: 1px;
+  margin-left: 14%;
+  width: 67%;
 }
 a {
   display: block;
@@ -208,10 +209,12 @@ a {
   font-size: 20px;
   font-weight: 700;
 }
+
 .phone-logo {
   color: #4aa8b8;
 }
-.business-hours {
+.business-hours,
+.cant-talk {
   /* text-align: center; */
   font-size: 15px;
   line-height: 3px;

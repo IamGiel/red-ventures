@@ -23,7 +23,7 @@ router.get("/", function(req, res, next) {
       title: "Dealers", //hook
       business: poolPros, //hook
       closed:saturday[i] === "",
-      flash: message
+      flash: "CLOSED"
     });
    
 });

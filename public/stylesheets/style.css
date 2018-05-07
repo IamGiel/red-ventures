@@ -50,7 +50,7 @@ li a {
 }
 
 /* logo style */
-#logo-pool{
+#logo-pool {
   font-family: "Passion One";
 }
 
@@ -169,7 +169,7 @@ img {
   left: 10%;
   display: block;
   text-align: center;
-  height: 33em;
+  height: 27em;
 }
 .card-top-divider {
   height: 0.3px;
@@ -198,21 +198,24 @@ a {
 
 /* card contents */
 
-.company-name{
+.company-name {
   font-family: "ABeeZee", sans-serif;
   text-align: center;
   font-weight: 100;
   font-size: 20px;
 }
-.phone{
+.phone {
   font-size: 20px;
   font-weight: 700;
 }
-.phone-logo{
+.phone-logo {
   color: #4aa8b8;
 }
-.business-hours{
+.business-hours {
   /* text-align: center; */
   font-size: 15px;
   line-height: 3px;
+}
+.certifications {
+  height: 3em;
 }

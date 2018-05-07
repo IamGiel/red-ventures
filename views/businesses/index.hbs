@@ -105,15 +105,22 @@
     <div class="business">
       <p class="business-header">Business Hours</p>
       <span class="business-hours">
-        <p>Weekdays - <span>{{this.data.weekHours.mon}}</span></p>
-        <p>Saturdays - <span>{{this.data.weekHours.sat}}</span></p>
-        <p>Sundays - <span>{{this.data.weekHours.sun}}</span></p>
+        <p>Weekdays -
+          <span>{{this.data.weekHours.mon}}</span>
+        </p>
+        <p>Saturdays -
+          <span>{{this.data.weekHours.sat}}</span>
+        </p>
+        <p>Sundays -
+          <span>{{this.data.weekHours.sun}}</span>
+        </p>
       </span>
     </div>
+    <br>
     <div class="card-footer">
-      <ul>
-        <li>{{this.data.certifications}}</li>
-      </ul>
+
+      <div class="certifications">{{this.data.certifications}}</div>
+
     </div>
   </section>
   {{/each}}

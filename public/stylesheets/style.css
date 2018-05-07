@@ -169,6 +169,7 @@ img {
   left: 10%;
   display: block;
   text-align: center;
+  height: 33em;
 }
 .card-top-divider {
   height: 0.3px;
@@ -201,10 +202,17 @@ a {
   font-family: "ABeeZee", sans-serif;
   text-align: center;
   font-weight: 100;
+  font-size: 20px;
 }
 .phone{
   font-size: 20px;
+  font-weight: 700;
 }
 .phone-logo{
-  color: #65c9ca
-;}
+  color: #4aa8b8;
+}
+.business-hours{
+  /* text-align: center; */
+  font-size: 15px;
+  line-height: 3px;
+}

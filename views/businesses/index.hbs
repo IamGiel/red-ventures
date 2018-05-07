@@ -91,8 +91,7 @@
   <section class="main-section">
     {{!-- company name --}}
     <h1 class="company-name">{{this.data.name}}</h1>
-    <hr class="card-top-divider">
-    {{!-- phone --}}
+    <hr class="card-top-divider"> {{!-- phone --}}
     <div>
       <span class="phone-logo"> ☎︎ </span>
       <div class="phone">{{this.data.phone1}}</div>
@@ -101,12 +100,14 @@
     <p>Cant talk now? Click below to send an email.</p>
     <!-- email box -->
     <div class="email">
-      <a href="#"> ✉️ Contact this pro </a>
+      <a href="mailto:{{this.data.email}}"> ✉️ Contact this pro </a>
     </div>
     <div class="business">
       <p class="business-header">Business Hours</p>
       <span class="business-hours">
-        Weekdays 7:00 am - 7:00 pm Saturdays 7:00 am - 3:00 pm Sundays - CLOSED
+        <p>Weekdays - <span>{{this.data.weekHours.mon}}</span></p>
+        <p>Saturdays - <span>{{this.data.weekHours.sat}}</span></p>
+        <p>Sundays - <span>{{this.data.weekHours.sun}}</span></p>
       </span>
     </div>
     <div class="card-footer">

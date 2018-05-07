@@ -19,14 +19,21 @@ router.get("/", function(req, res, next) {
       poolPros.push(dealers.slice(i, i + chunksPerRow)); // logic for keeping each row at three chunks
       certifications.push(dealers[i].data.certifications);
     }
-     console.log("=====>>>>>>>", certifications);
+     console.log("=====>>>>>>>", dealers.length);
 
-    res.render("businesses/index", {
+    res.render("businesses/cards", {
       title: "Dealers", //hook
       business: poolPros, //hook
-      certificate: certifications
+      certificate: certifications,
+      number: dealers.length
     });
-   
+});
+
+router.get("/commercial/:id", function(req, res, next) {
+  var commercial = [];
+
+  var bussinessId = req.params.id; //retrieve id here
+  res.redirect("/commercial");
 });
 
 module.exports = router;

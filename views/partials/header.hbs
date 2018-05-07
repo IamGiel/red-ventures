@@ -43,7 +43,7 @@
 <!-- search box -->
 <ul id="search-box">
   <li class="search-link">
-    <a class="link-color" href="#home"> 🔎 Find a Pool Pro</a>
+    <a class="link-color" href="http://google.com"> 🔎 Find a Pool Pro</a>
   </li>
 </ul>
 
@@ -63,7 +63,7 @@
       <!-- an hr vertical divider -->
     </li>
     <li class="nav-buttons-right" id="radio">
-      <span id="num-dealers">7</span> dealers in 28226
+      <span id="num-dealers">{{number}}</span> dealers in 28226
     </li>
   </ul>
   <ul class="radio-selectors">
@@ -82,45 +82,4 @@
   </ul>
 </div>
 
-<!-- business cards contents -->
 
-{{#each business}}
-
-<div id="main-container" class="container">
-  {{#each this}}
-  <section class="main-section">
-    {{!-- company name --}}
-    <h1 class="company-name">{{this.data.name}}</h1>
-    <hr class="card-top-divider"> {{!-- phone --}}
-    <div>
-      <span class="phone-logo"> ☎︎ </span>
-      <div class="phone">{{this.data.phone1}}</div>
-    </div>
-    {{!-- message --}}
-    <p class="cant-talk">Cant talk now? Click below to send an email.</p>
-    <!-- email box -->
-    <div class="email">
-      <a href="mailto:{{this.data.email}}"> ✉️ Contact this pro </a>
-    </div>
-    <div class="business">
-      <p class="business-header">Business Hours</p>
-      <span class="business-hours">
-        <p>Weekdays -
-          <span>{{this.data.weekHours.mon}}</span>
-        </p>
-        <p>Saturdays -
-          <span>{{this.data.weekHours.sat}}</span>
-        </p>
-        <p>Sundays -
-          <span>{{this.data.weekHours.sun}}</span>
-        </p>
-      </span>
-    </div>
-    <br>
-    <div class="card-footer">
-      <div class="certifications">{{this.data.certifications}}</div>
-    </div>
-  </section>
-  {{/each}}
-</div>
-{{/each}}

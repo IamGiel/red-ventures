@@ -186,7 +186,7 @@
         },
         "certifications": ["Installation Pro", "Commercial Pro", "Service Pro"]
       }
-    },
+    }
     
   ];
   

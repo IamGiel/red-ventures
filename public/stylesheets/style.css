@@ -142,7 +142,6 @@ img {
   width: 2px;
 }
 
-
 .radio-btn {
   margin-left: 3%;
 }
@@ -164,18 +163,18 @@ img {
   margin-left: 27px;
   background: #fff;
   border: 1px solid #ddd;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
   position: relative;
   left: 10%;
   display: block;
-  border-radius: 1em;
-
 }
-.card-top-divider{
-  height:0.3px;
+.card-top-divider {
+  height: 0.3px;
 }
-.email{
+.email {
   border-style: groove;
-  border-color: #65C9CA;
+  border-color: #65c9ca;
   text-decoration: none;
   padding: 14px;
   margin-left: 2%;
@@ -186,10 +185,11 @@ a {
   padding: 14px 16px;
   text-decoration: none;
 }
-.business{
+.business {
   position: relative;
   width: 100%;
+  text-align: center;
 }
-.business-header{
+.business-header {
   font-weight: bold;
 }

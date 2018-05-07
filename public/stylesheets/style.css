@@ -220,5 +220,10 @@ a {
   line-height: 3px;
 }
 .certifications {
-  height: 3em;
+  height: 8em;
+  font-size: 16px;
+  width: 75%;
+  line-height: 27px;
+  margin-left: 12%;
+  letter-spacing: 1px;
 }

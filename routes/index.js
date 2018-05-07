@@ -7,23 +7,24 @@ router.get("/", function(req, res, next) {
  
     var poolPros = []; //were gonna render this array, in our HOOK, as a key in our hbs page
     var saturday =[];
+    var certifications= [];
     var chunksPerRow = 3; //just to say, we want each row to contain three cards/container
-    var sat = poolPros.data;
     //here we loop through dealers
-    for (let i = 0; i < dealers.length; i++) {
-     saturday.push(dealers[i].data.weekHours.sat);
-    }
+    // for (let i = 0; i < dealers.length; i++) {
+    //  saturday.push(dealers[i].data.weekHours.sat);
+    //  certifications.push(dealers[i].data.certifications[i]);
+    // }
     for (var i = 0; i < dealers.length; i += chunksPerRow) {
       // i is incremented by three
       poolPros.push(dealers.slice(i, i + chunksPerRow)); // logic for keeping each row at three chunks
+      certifications.push(dealers[i].data.certifications);
     }
-     console.log("=====>>>>>>>", saturday);
+     console.log("=====>>>>>>>", certifications);
 
     res.render("businesses/index", {
       title: "Dealers", //hook
       business: poolPros, //hook
-      closed:saturday[i] === "",
-      flash: "CLOSED"
+      certificate: certifications
     });
    
 });

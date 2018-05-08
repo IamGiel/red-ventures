@@ -1,5 +1,39 @@
 <!-- business cards contents -->
 
+<!-- radio selectors -->
+<div class="selector-div">
+  <ul class="radio-selectors">
+    <li class="nav-buttons-right" id="radio">
+      Filter Results
+    </li>
+    <li class="nav-buttons-right" id="radio">
+      <hr id="divider">
+      <!-- an hr vertical divider -->
+    </li>
+    <li class="nav-buttons-right" id="radio">
+      <span id="num-dealers">{{number}}</span> dealers in 28226
+    </li>
+  </ul>
+  <ul class="radio-selectors">
+    <li class="nav-buttons-right radio-btn">
+      <input type="radio" name="Service" value="Service" checked> Service
+    </li>
+    <li class="nav-buttons-right radio-btn">
+      <input type="radio" name="Installation" value="Installation" checked> Installation
+    </li>
+    <li class="nav-buttons-right radio-btn">
+      <input type="radio" name="Residential" value="Residential" checked> Residential
+    </li>
+    <li class="nav-buttons-right radio-btn">
+      <input type="radio" name="Commercial" value="Commercial" checked> Commercial
+    </li>
+    <li class="nav-buttons-right radio-btn">
+      <input type="radio" name="All" value="All" checked> All
+    </li>
+  </ul>
+</div>
+
+{{!--  bussiness cards --}}
 {{#each business}}
 
 <div id="main-container" class="container">

@@ -357,4 +357,7 @@ a {
     text-align: center;
     height: 27em;
   }
+  .phone-div {
+    background-color: #0366d061;
+}
 }

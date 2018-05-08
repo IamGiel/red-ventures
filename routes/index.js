@@ -2,8 +2,9 @@ const express = require("express");
 const router = express.Router();
 const dealers = require("../data/dealers");
 
+
 /* GET home page. */
-router.get("/", (req, res, next) => {
+router.get("*", (req, res, next) => {
   const poolPros = []; //were gonna render this array, in our HOOK, as a key in our hbs page
   const saturday = [];
   const certifications = [];
@@ -15,7 +16,7 @@ router.get("/", (req, res, next) => {
   }
   console.log("=====>>>>>>>", dealers.length);
 
-  res.render("businesses/allbusiness", {
+  res.render("businesses/all", {
     // title: "Dealers", //hook test
     business: poolPros, //hook
     certificate: certifications,

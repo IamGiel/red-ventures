@@ -2,7 +2,7 @@
 
 <!-- radio selectors -->
 <div class="selector-div">
-  <ul class="filter-pane">
+  <ul class="left-filter-pane">
     <li class="nav-buttons-right" id="radio">
       <a id="filter"> Filter Results </a>
     </li>
@@ -16,28 +16,26 @@
   </ul>
 
   {{!-- radio selectors --}}
-  <ul class="filter-pane">
-    <li class="nav-buttons-right radio-btn">
-      <input class="input" type="radio" name="option" value="Service"> Service
-    </li>
-    <li class="nav-buttons-right radio-btn">
-      <input class="input" type="radio" name="option" value="Installation"> Installation
-    </li>
-    <li class="nav-buttons-right radio-btn">
-      <input class="input" type="radio" name="option" value="Residential"> Residential
-    </li>
-    <li class="nav-buttons-right radio-btn">
-      <input class="input" type="radio" name="option" value="Commercial"> Commercial
-    </li>
-    <li class="nav-buttons-right radio-btn">
-      <input class="input" type="radio" name="option" value="All"> All
-    </li>
-  </ul>
+  <div class="right-filter-pane">
+      <a href="/service" class="radio-link" role="button">
+        <label for="service">Service</label>
+      </a>
+      <a href="/installation" class="radio-link" role="button">
+        <label for="installation">Installation</label>
+      </a>
+      <a href="/residential" class="radio-link" role="button">
+        <label for="residential">Residential</label>
+      </a>
+      <a href="/commercial" class="radio-link" role="button">
+        <label for="commercial">Commercial</label>
+      </a>
+      <a href="/all" class="radio-link" role="button">
+        <label for="all">All</label>
+      </a>
+  </div>
 </div>
 
-{{!-- bussiness cards --}}
-
-{{#each installPro}}
+{{!-- bussiness cards --}} {{#each installPro}}
 <div id="main-container" class="container">
   {{#each this}}
   <section class="main-section">

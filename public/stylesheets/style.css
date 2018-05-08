@@ -121,19 +121,18 @@ img {
   border-radius: 0.5em;
 }
 
-.filter-pane {
-  margin-left: 4%;
-  padding: 0;
-  overflow: hidden;
-  display: inline-block;
-  width: 45%;
-  float: left;
+.left-filter-pane {
+  width: 50%;
+  line-height: 5em;
+  color: #306ed6;
+}
+.right-filter-pane {
+  line-height: 2em;
   position: relative;
-  left: -13%;
-  height: 5em;
-  font-size: 15px;
-  line-height: 74px;
-  color: #4979d2;
+  top: 2em;
+  float: left;
+  display: block;
+  left: 2%;
 }
 #filter {
   display: inline-block;
@@ -149,6 +148,16 @@ img {
 
 .radio-btn {
   margin-left: 3%;
+}
+
+.radio-link {
+  position: relative;
+  left: -3%;
+  top: 1em;
+  display: inline-block;
+  top: -37px;
+  float: left;
+  font-size: 14px;
 }
 #radio {
   margin-left: 8%;

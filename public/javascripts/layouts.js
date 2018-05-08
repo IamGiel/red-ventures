@@ -13,7 +13,7 @@ $radios.change(function() {
   var $checked = $radios.filter(()=> {
     return this.checked;
   })
-  console.log(">>>>>>",$checked.val());
+  console.log(">>>>>>", this.checked);
   // Check for the selected radio on change
 });
 

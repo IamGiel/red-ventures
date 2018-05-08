@@ -1,0 +1,75 @@
+<!-- business cards contents -->
+
+<!-- radio selectors -->
+<div class="selector-div">
+  <ul class="radio-selectors">
+    <li class="nav-buttons-right" id="radio">
+      Filter Results
+    </li>
+    <li class="nav-buttons-right" id="radio">
+      <hr id="divider">
+      <!-- an hr vertical divider -->
+    </li>
+    <li class="nav-buttons-right" id="radio">
+      <span id="num-dealers">{{number}}</span> dealers in 28226
+    </li>
+  </ul>
+  <ul class="radio-selectors">
+    <li class="nav-buttons-right radio-btn">
+      <input type="radio" name="gender" value="male" checked> Service
+    </li>
+    <li class="nav-buttons-right radio-btn">
+      <input type="radio" name="gender" value="male" checked> Installation
+    </li>
+    <li class="nav-buttons-right radio-btn">
+      <input type="radio" name="gender" value="male" checked> Residential
+    </li>
+    <li class="nav-buttons-right radio-btn">
+      <input type="radio" name="gender" value="male" checked> Commercial
+    </li>
+  </ul>
+</div>
+
+{{#each installPro}}
+<div id="main-container" class="container">
+  {{#each this}}
+  <section class="main-section">
+    {{!-- company name --}}
+    <h1 class="company-name">{{this.name}}</h1>
+    <hr class="card-top-divider"> {{!-- phone --}}
+    <div>
+      <span class="phone-logo"> ☎︎ </span>
+      <div class="phone">{{this.phone1}}</div>
+    </div>
+    {{!-- message --}}
+    <p class="cant-talk">Cant talk now? Click below to send an email.</p>
+    <!-- email box -->
+    <div class="email">
+      <a href="mailto:{{this.email}}"> ✉️ Contact this pro </a>
+    </div>
+    <div class="business">
+      <p class="business-header">Business Hours</p>
+      <span class="business-hours">
+        <p>Weekdays -
+          <span>{{this.weekHours.mon}}</span>
+        </p>
+        <p>Saturdays -
+          <span>{{this.weekHours.sat}}</span>
+        </p>
+        <p>Sundays -
+          <span>{{this.weekHours.sun}}</span>
+        </p>
+      </span>
+    </div>
+    <br>
+    <div class="card-footer">
+      <div class="certifications">{{this.certifications}}</div>
+    </div>
+  </section>
+  {{/each}}
+
+  <div>
+    {{certificate}}
+  </div>
+</div>
+{{/each}}

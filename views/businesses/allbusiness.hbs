@@ -2,9 +2,9 @@
 
 <!-- radio selectors -->
 <div class="selector-div">
-  <ul class="radio-selectors">
+  <ul class="filter-pane">
     <li class="nav-buttons-right" id="radio">
-      Filter Results
+      <a id="filter"> Filter Results </a>
     </li>
     <li class="nav-buttons-right" id="radio">
       <hr id="divider">
@@ -14,27 +14,28 @@
       <span id="num-dealers">{{number}}</span> dealers in 28226
     </li>
   </ul>
-  <ul class="radio-selectors">
+
+{{!-- radio selectors --}}
+  <ul class="filter-pane">
     <li class="nav-buttons-right radio-btn">
-      <input type="radio" name="Service" value="Service" checked> Service
+      <input class="input" type="radio" name="option" value="Service"> Service
     </li>
     <li class="nav-buttons-right radio-btn">
-      <input type="radio" name="Installation" value="Installation" checked> Installation
+      <input class="input" type="radio" name="option" value="Installation"> Installation
     </li>
     <li class="nav-buttons-right radio-btn">
-      <input type="radio" name="Residential" value="Residential" checked> Residential
+      <input class="input" type="radio" name="option" value="Residential" > Residential
     </li>
     <li class="nav-buttons-right radio-btn">
-      <input type="radio" name="Commercial" value="Commercial" checked> Commercial
+      <input class="input" type="radio" name="option" value="Commercial"> Commercial
     </li>
     <li class="nav-buttons-right radio-btn">
-      <input type="radio" name="All" value="All" checked> All
+      <input class="input" type="radio" name="option" value="All" > All
     </li>
   </ul>
 </div>
 
-{{!--  bussiness cards --}}
-{{#each business}}
+{{!-- bussiness cards --}} {{#each business}}
 
 <div id="main-container" class="container">
   {{#each this}}

@@ -121,7 +121,7 @@ img {
   border-radius: 0.5em;
 }
 
-.radio-selectors {
+.filter-pane {
   margin-left: 4%;
   padding: 0;
   overflow: hidden;
@@ -134,6 +134,11 @@ img {
   font-size: 15px;
   line-height: 74px;
   color: #4979d2;
+}
+#filter {
+  display: inline-block;
+  position: relative;
+  top: -1em;
 }
 
 #divider {
@@ -217,7 +222,8 @@ a {
 .cant-talk {
   /* text-align: center; */
   font-size: 15px;
-  line-height: 3px;
+  line-height: 21px;
+  height: 2em;
 }
 .certifications {
   height: 8em;

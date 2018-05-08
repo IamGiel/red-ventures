@@ -15,7 +15,7 @@ router.get("/", (req, res, next) => {
   }
   console.log("=====>>>>>>>", dealers.length);
 
-  res.render("businesses/cards", {
+  res.render("businesses/allbusiness", {
     // title: "Dealers", //hook test
     business: poolPros, //hook
     certificate: certifications,

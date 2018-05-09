@@ -301,7 +301,8 @@ a {
 
   #radio {
     margin-left: 8%;
-    top: -12vh;
+    top: -14vh;
+    left: -1px;
   }
 
   .radio-link {
@@ -322,11 +323,21 @@ a {
     line-height: -5em;
     color: #306ed6;
     height: 16vh;
-    position: absolute;
+    position: rel;
     top: -17vh;
-    left: 5%;
+    left: 0%;
     font-size: 20px;
     width: 98%;
+  }
+
+  .right-filter-pane {
+    line-height: 0em;
+    position: relative;
+    top: -2em;
+    float: left;
+    display: block;
+    left: 3%;
+    height: 28vh;
   }
   .navigational {
     display: none;

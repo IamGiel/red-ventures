@@ -388,6 +388,17 @@ a {
     border-bottom-right-radius: 18px;
     background-color: gainsboro;
   }
+  #myDropdown {
+    position: absolute;
+    width: 18em;
+    float: left;
+    left: -11em;
+  }
+  .drop-menu {
+    display: inline-block;
+    position: absolute;
+    margin-left: 4%;
+  }
   /* ======= drop down button/contents ====== */
   .dropbtn {
     background-color: #3498db;

@@ -248,7 +248,7 @@ a {
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 667px) and (orientation: portrait) {
   .top-level-links {
     display: none;
   }
@@ -359,5 +359,74 @@ a {
   }
   .phone-div {
     background-color: #0366d061;
+  }
 }
+
+/* Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .right-filter-pane {
+    line-height: 0em;
+    position: relative;
+    top: 0em;
+    float: left;
+    display: inline-block;
+    left: 6%;
+    width: 100%;
+  }
+  .left-filter-pane {
+    width: 100%;
+    line-height: 5em;
+    color: #306ed6;
+  }
+  .radio-link {
+    position: relative;
+    left: -4%;
+    top: 1em;
+    display: inline-block;
+    top: -7px;
+    float: left;
+    font-size: 14px;
+    margin-left: 4%;
+    font-size: 21px;
+    border-radius: 1em;
+    background-color: #1c3f8236;
+  }
+  ul {
+    width: 56%;
+  }
+  #radio {
+    margin-left: 0%;
+    font-size: 21px;
+    width: 28%;
+  }
+
+  #filter {
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    left: -13em;
+    float: left;
+    font-size: 17px;
+  }
+  .main-section {
+    float: left;
+    width: 33.33%;
+    /* max-width: 645px; */
+    padding: 11px;
+    margin-top: 2%;
+    margin-left: 27px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    position: relative;
+    left: 10%;
+    display: block;
+    text-align: center;
+    height: 27em;
+  }
+
+  .email {
+    background-color: #abc5ea;
+  }
 }

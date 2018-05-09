@@ -300,9 +300,9 @@ a {
   }
 
   #radio {
-    margin-left: 8%;
-    top: -14vh;
-    left: -1px;
+    margin-left: 0%;
+    top: 19px;
+    left: -5%;
   }
 
   .radio-link {
@@ -367,7 +367,7 @@ a {
     position: relative;
     display: block;
     text-align: center;
-    height: 91vh;
+    height: 86vh;
   }
   .phone-div {
     background-color: #0366d061;

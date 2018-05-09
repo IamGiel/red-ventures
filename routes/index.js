@@ -24,6 +24,27 @@ router.get("/", (req, res, next) => {
   });
 });
 
+/* GET home page. */
+router.get("/all", (req, res, next) => {
+  const poolPros = []; //were gonna render this array, in our HOOK, as a key in our hbs page
+  const saturday = [];
+  const certifications = [];
+  const chunksPerRow = 3; //just to say, we want each row to contain three cards/container
+  for (let i = 0; i < dealers.length; i += chunksPerRow) {
+    // i is incremented by three
+    poolPros.push(dealers.slice(i, i + chunksPerRow)); // logic for keeping each row at three chunks
+    certifications.push(dealers[i].data.certifications);
+  }
+  console.log("=====>>>>>>>", dealers.length);
+
+  res.render("businesses/all", {
+    // title: "Dealers", //hook test
+    business: poolPros, //hook
+    certificate: certifications,
+    number: dealers.length
+  });
+});
+
 // render all business with service certification
 router.get("/service", (req, res, next) => {
 

@@ -1,26 +1,21 @@
 
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
 
-//we need to find a way to select a radio
-//render the cards that associated to the
-//value of the selected radio
-$(document).ready(()=> {
-
-
-
-
-var $radios = $('input[type="radio"]');
-$radios.change(function() {
-  var $checked = $radios.filter(()=> {
-    return this.checked;
-  })
-  console.log(">>>>>>", this.checked);
-  // Check for the selected radio on change
-});
-
-// $("#filter").on('click', ()=> {
-  
-// })
-
-});
-
-
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    console.log("firing here >>>>>");
+    if (!event.target.matches(".dropbtn")) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+  };

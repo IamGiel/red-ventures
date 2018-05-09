@@ -1,5 +1,9 @@
 /* navbar style */
 
+.dropdown {
+  display: none;
+}
+
 .top-level-links,
 .top-level {
   background-color: #143e87;
@@ -356,7 +360,7 @@ a {
   .phone-div {
     background-color: #0366d061;
   }
-  /* ======= drop down ====== */
+  /* ======= drop down button/contents ====== */
   .dropbtn {
     background-color: #3498db;
     color: white;
@@ -369,6 +373,20 @@ a {
     float: right;
     left: 4em;
     height: 5em;
+  }
+  /* bars */
+  .fa-align-justify:before {
+    content: "\f039";
+    position: absolute;
+    left: 30%;
+  }
+
+  .fas {
+    left: 44px;
+    height: 4vh;
+    width: 1em;
+    padding: 24px;
+    padding-bottom: 31px;
   }
 
   .dropbtn:hover,

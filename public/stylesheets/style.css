@@ -304,6 +304,12 @@ a {
     border-style: solid;
     border-width: 0.5px;
   }
+
+  #radio {
+    margin-left: 9%;
+    top: -12vh;
+  }
+
   .radio-link {
     position: relative;
     left: -2%;

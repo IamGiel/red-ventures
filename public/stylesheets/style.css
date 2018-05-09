@@ -359,7 +359,7 @@ a {
     width: 82%;
     padding-top: 8%;
     margin-left: -8%;
-    margin-bottom: 9%;
+    margin-bottom: 28%;
     background: #fff;
     border: 1px solid #ddd;
     border-top-left-radius: 2em;
@@ -367,7 +367,7 @@ a {
     position: relative;
     display: block;
     text-align: center;
-    height: 86vh;
+    height: 22em;
   }
   .phone-div {
     background-color: #0366d061;

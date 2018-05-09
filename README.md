@@ -15,7 +15,7 @@ A Red Venture assignment.
  <br>
 
  Or paste this link to your favorite browser: https://fierce-earth-59520.herokuapp.com
-</p>.
+</p>
 
 <hr>
 <p>Instructions prompt for this assignment:</p>

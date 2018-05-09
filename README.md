@@ -2,13 +2,20 @@
 
 A Red Venture assignment.
 
-<p>To run the web app</p>
+<p>To run the web app in your local machine:</p>
 <ul>
   <li>Clone the repo in console type: git clone https://github.com/IamGiel/red-ventures.git</li>
   <li>At the root folder, type: npm install</li>
   <li>At the root folder, type: npm start</li>
   <li>Open to http://localhost:3000/</li>
 </ul>
+
+<p>To run the web app from the cloud:
+ <a href="https://fierce-earth-59520.herokuapp.com">click this link</a>.
+ <br>
+
+ Or paste this link to your favorite browser: https://fierce-earth-59520.herokuapp.com
+</p>.
 
 <hr>
 <p>Instructions prompt for this assignment:</p>

@@ -4,7 +4,7 @@ const dealers = require("../data/dealers");
 
 
 /* GET home page. */
-router.get("/all", (req, res, next) => {
+router.get("/", (req, res, next) => {
   const poolPros = []; //were gonna render this array, in our HOOK, as a key in our hbs page
   const saturday = [];
   const certifications = [];

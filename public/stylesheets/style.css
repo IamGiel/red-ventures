@@ -314,7 +314,7 @@ a {
     font-size: 25px;
     width: 100%;
     text-align: left;
-    color: rgba(0, 0, 0, 0.514);
+    color: #1c4080;
     line-height: 15px;
   }
   .left-filter-pane {
@@ -388,8 +388,9 @@ a {
     font-size: 14px;
     margin-left: 4%;
     font-size: 21px;
-    border-radius: 1em;
-    background-color: #1c3f8236;
+    border-radius: 1px;
+    background-color: #afc5e7;
+    color: #1c4080;
   }
   ul {
     width: 56%;

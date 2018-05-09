@@ -300,7 +300,7 @@ a {
   }
 
   #radio {
-    margin-left: 9%;
+    margin-left: 8%;
     top: -12vh;
   }
 
@@ -324,9 +324,9 @@ a {
     height: 16vh;
     position: absolute;
     top: -17vh;
-    left: 0%;
+    left: 5%;
     font-size: 20px;
-    width: 100%;
+    width: 98%;
   }
   .navigational {
     display: none;

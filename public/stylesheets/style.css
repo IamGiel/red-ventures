@@ -271,17 +271,7 @@ a {
     position: relative;
   }
   #search-box {
-    border-style: groove;
-    border-color: #4979d2;
-    position: relative;
-    display: inline-block;
-    float: right;
-    left: -6%;
-    width: 40%;
-    height: 41px;
-    top: -4em;
-    color: black;
-    line-height: 18px;
+    display: none;
   }
   #header-hr {
     top: -8vh;
@@ -366,14 +356,19 @@ a {
   .phone-div {
     background-color: #0366d061;
   }
-  /* drop down */
+  /* ======= drop down ====== */
   .dropbtn {
     background-color: #3498db;
     color: white;
-    padding: 16px;
+    padding: 18px;
+    margin-bottom: 9vh;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    position: relative;
+    float: right;
+    left: 4em;
+    height: 5em;
   }
 
   .dropbtn:hover,
@@ -483,7 +478,8 @@ a {
   .email {
     background-color: #abc5ea;
   }
-  .dropbtn, .drop-items {
+  .dropbtn,
+  .drop-items {
     display: none;
   }
 }

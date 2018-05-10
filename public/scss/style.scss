@@ -26,6 +26,22 @@ $lighter-blue: #306ed6;
   text-align: center;
 }
 
+@mixin selector-div-basic {
+  position: relative;
+  display: block;
+  height: 20%;
+  background-color: #e8e8e8;
+  float: left;
+}
+
+@mixin radio-link-basic {
+  position: relative;
+  top: 1em;
+  display: inline-block;
+  float: left;
+  color: #1c4080;
+}
+
 /* navbar style */
 .dropdown {
   display: none;
@@ -142,15 +158,11 @@ img {
 
 /* radio selector buttons */
 .selector-div {
-  position: relative;
-  display: block;
-  width: 75%;
-  height: 20%;
-  background-color: #e8e8e8;
-  float: left;
-  left: 12%;
+  @include selector-div-basic();
   margin-right: 25%;
   border-radius: 0.5em;
+  left: 12%;
+  width: 75%;
 }
 
 .left-filter-pane {
@@ -314,12 +326,7 @@ a {
   }
 
   .selector-div {
-    position: relative;
-    display: block;
-    width: 99%;
-    height: 20%;
-    background-color: white;
-    float: left;
+    @include selector-div-basic();
     left: 1%;
     margin-right: 25%;
     margin-bottom: 2%;
@@ -327,6 +334,7 @@ a {
     top: 0vh;
     border-style: solid;
     border-width: 0.5px;
+    width: 100%;
   }
 
   #radio {
@@ -336,16 +344,11 @@ a {
   }
 
   .radio-link {
-    position: relative;
-    left: -2%;
-    top: 1em;
-    display: inline-block;
+    @include radio-link-basic();
     top: -37px;
-    float: left;
     font-size: 25px;
     width: 100%;
     text-align: left;
-    color: #1c4080;
     line-height: 15px;
   }
 
@@ -518,20 +521,15 @@ a {
   }
 
   .radio-link {
-    position: relative;
+    @include radio-link-basic();
     left: -4%;
-    top: 1em;
-    display: inline-block;
-    top: -7px;
-    float: left;
+    top: -7px !important;
     font-size: 14px;
     margin-left: 4%;
     font-size: 21px;
     border-radius: 1px;
     background-color: #afc5e7;
-    color: #1c4080;
   }
-
   ul {
     width: 56%;
   }

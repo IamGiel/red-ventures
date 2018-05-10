@@ -306,8 +306,8 @@ a {
   .right-filter-pane {
     line-height: 0em;
     position: relative;
-    top: -2em;
     float: left;
+    top: -2em;
     display: block;
     left: 3%;
     height: 28vh; }
@@ -433,8 +433,8 @@ a {
   .right-filter-pane {
     line-height: 0em;
     position: relative;
-    top: 0em;
     float: left;
+    top: 0em;
     display: inline-block;
     left: 6%;
     width: 100%; }

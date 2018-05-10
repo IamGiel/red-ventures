@@ -41,6 +41,11 @@ $lighter-blue: #306ed6;
   float: left;
   color: #1c4080;
 }
+@mixin right-filter-basic {
+  line-height: 0em;
+  position: relative;
+  float: left;
+}
 
 /* navbar style */
 .dropdown {
@@ -365,10 +370,8 @@ a {
   }
 
   .right-filter-pane {
-    line-height: 0em;
-    position: relative;
+    @include right-filter-basic();
     top: -2em;
-    float: left;
     display: block;
     left: 3%;
     height: 28vh;
@@ -505,10 +508,8 @@ a {
 /* Portrait and Landscape */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .right-filter-pane {
-    line-height: 0em;
-    position: relative;
+    @include right-filter-basic();
     top: 0em;
-    float: left;
     display: inline-block;
     left: 6%;
     width: 100%;

@@ -51,7 +51,7 @@ router.get("/service", (req, res, next) => {
   let installationPro = [];
   for (let i = 0; i < dealers.length; i++) {
     //if in certifications array
-    //one of the string values match 'Installation Pro'
+    //one of the string values match 'Service Pro'
     //render this business card
     const installPro = dealers[i].data.certifications;
     const wordsToMatch = installPro.join(" ");
@@ -76,7 +76,7 @@ router.get("/commercial", (req, res, next) => {
   let installationPro = [];
   for (let i = 0; i < dealers.length; i++) {
     //if in certifications array
-    //one of the string values match 'Installation Pro'
+    //one of the string values match 'Commercial Pro'
     //render this business card
     const installPro = dealers[i].data.certifications;
     const wordsToMatch = installPro.join(" ");
@@ -101,7 +101,7 @@ router.get("/residential", (req, res, next) => {
   let installationPro = [];
   for (let i = 0; i < dealers.length; i++) {
     //if in certifications array
-    //one of the string values match 'Installation Pro'
+    //one of the string values match 'Residential Pro'
     //render this business card
     const installPro = dealers[i].data.certifications;
     const wordsToMatch = installPro.join(" ");

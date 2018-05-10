@@ -1,12 +1,29 @@
 //variables
 $dark-blue: #143e87;
+$light-blue: #316fd8;
+$lighter-blue: #306ed6;
 
 @mixin logo-basic-style {
-    color: #316fd8;
-    float: left;
-    display: inline-block;
-    line-height: 0em;
-    font-family: "ABeeZee", sans-serif;
+  color: $light-blue;
+  float: left;
+  display: inline-block;
+  line-height: 0em;
+  font-family: "ABeeZee", sans-serif;
+}
+@mixin font-style {
+  font-family: "Montserrat", sans-serif;
+  color: $dark-blue;
+}
+
+@mixin main-section-basic {
+  float: left;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  background: #fff;
+  border: 1px solid #ddd;
+  position: relative;
+  display: block;
+  text-align: center;
 }
 
 /* navbar style */
@@ -71,7 +88,7 @@ li a {
 }
 
 #logo {
- @include logo-basic-style();
+  @include logo-basic-style();
 }
 
 #pool-pros {
@@ -81,13 +98,12 @@ li a {
 }
 
 strong {
-  color: #306ed6 !important;
+  color: $lighter-blue !important;
   font-size: 49px;
 }
 
 #montserrat {
-  font-family: "Montserrat", sans-serif;
-  color: $dark-blue;
+  @include font-style();
 }
 
 #header-hr {
@@ -140,7 +156,7 @@ img {
 .left-filter-pane {
   width: 50%;
   line-height: 5em;
-  color: #306ed6;
+  color: $lighter-blue;
 }
 
 .right-filter-pane {
@@ -189,20 +205,13 @@ img {
 }
 
 .main-section {
-  float: left;
+  @include main-section-basic();
   width: 20%;
   max-width: 650px;
   padding: 27px;
   margin-top: 2%;
   margin-left: 27px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-  position: relative;
   left: 10%;
-  display: block;
-  text-align: center;
   height: 27em;
 }
 
@@ -286,9 +295,7 @@ a {
   }
 
   #montserrat {
-    font-family: "Montserrat", sans-serif;
-    color: $dark-blue;
-    /* font-size: 40px; */
+    @include font-style();
     letter-spacing: -3px;
     left: -4%;
     position: relative;
@@ -345,7 +352,7 @@ a {
   .left-filter-pane {
     width: 75%;
     line-height: -5em;
-    color: #306ed6;
+    color: $lighter-blue;
     height: 16vh;
     position: rel;
     top: -17vh;
@@ -382,18 +389,11 @@ a {
   }
 
   .main-section {
-    float: left;
+    @include main-section-basic();
     width: 82%;
     padding-top: 8%;
     margin-left: -8%;
     margin-bottom: 20%;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    position: relative;
-    display: block;
-    text-align: center;
     height: 79vh;
   }
 
@@ -514,7 +514,7 @@ a {
   .left-filter-pane {
     width: 100%;
     line-height: 5em;
-    color: #306ed6;
+    color: $lighter-blue;
   }
 
   .radio-link {
@@ -552,21 +552,14 @@ a {
   }
 
   .main-section {
-    float: left;
+    @include logo-basic-style();
     width: 33.33%;
-    /* max-width: 645px; */
     padding: 11px;
     margin-top: 2%;
     margin-left: 27px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    position: relative;
     left: 10%;
-    display: block;
-    text-align: center;
     height: 27em;
+    line-height: 4vh;
   }
 
   .email {

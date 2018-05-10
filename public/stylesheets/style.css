@@ -158,19 +158,19 @@ img {
 
 .main-section {
   float: left;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  background: #fff;
+  border: 1px solid #ddd;
+  position: relative;
+  display: block;
+  text-align: center;
   width: 20%;
   max-width: 650px;
   padding: 27px;
   margin-top: 2%;
   margin-left: 27px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-  position: relative;
   left: 10%;
-  display: block;
-  text-align: center;
   height: 27em; }
 
 .card-top-divider {
@@ -247,7 +247,6 @@ a {
   #montserrat {
     font-family: "Montserrat", sans-serif;
     color: #143e87;
-    /* font-size: 40px; */
     letter-spacing: -3px;
     left: -4%;
     position: relative; }
@@ -330,17 +329,17 @@ a {
 
   .main-section {
     float: left;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: relative;
+    display: block;
+    text-align: center;
     width: 82%;
     padding-top: 8%;
     margin-left: -8%;
     margin-bottom: 20%;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    position: relative;
-    display: block;
-    text-align: center;
     height: 79vh; }
 
   .phone-div {
@@ -477,21 +476,18 @@ a {
     font-size: 17px; }
 
   .main-section {
+    color: #316fd8;
     float: left;
+    display: inline-block;
+    line-height: 0em;
+    font-family: "ABeeZee", sans-serif;
     width: 33.33%;
-    /* max-width: 645px; */
     padding: 11px;
     margin-top: 2%;
     margin-left: 27px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    position: relative;
     left: 10%;
-    display: block;
-    text-align: center;
-    height: 27em; }
+    height: 27em;
+    line-height: 4vh; }
 
   .email {
     background-color: #abc5ea; }

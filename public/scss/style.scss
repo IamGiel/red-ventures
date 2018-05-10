@@ -1,10 +1,22 @@
+//variables
+$dark-blue: #143e87;
+
+@mixin logo-basic-style {
+    color: #316fd8;
+    float: left;
+    display: inline-block;
+    line-height: 0em;
+    font-family: "ABeeZee", sans-serif;
+}
+
 /* navbar style */
 .dropdown {
-  display: none; }
+  display: none;
+}
 
 .top-level-links,
 .top-level {
-  background-color: #143e87;
+  background-color: $dark-blue;
   color: white;
   font-size: 17px;
   width: 100%;
@@ -12,14 +24,17 @@
   line-height: 0em;
   height: 10%;
   position: relative;
-  top: 2%; }
+  top: 2%;
+}
 
 .top-right-links {
   position: relative;
-  left: -5%; }
+  left: -5%;
+}
 
 .link-color {
-  color: #143e87; }
+  color: $dark-blue;
+}
 
 ul {
   list-style-type: none;
@@ -33,10 +48,12 @@ ul {
   left: -1%;
   height: 5em;
   font-size: 15px;
-  line-height: 29px; }
+  line-height: 29px;
+}
 
 .nav-buttons-right {
-  float: right; }
+  float: right;
+}
 
 li a {
   display: block;
@@ -45,37 +62,40 @@ li a {
   text-decoration: none;
   position: relative;
   top: 27px;
-  font-family: "Quattrocento Sans", sans-serif; }
+  font-family: "Quattrocento Sans", sans-serif;
+}
 
 /* logo style */
 #logo-pool {
-  font-family: "Passion One"; }
+  font-family: "Passion One";
+}
 
 #logo {
-  color: #316fd8;
-  float: left;
-  display: inline-block;
-  line-height: 0em;
-  font-family: "ABeeZee", sans-serif; }
+ @include logo-basic-style();
+}
 
 #pool-pros {
   position: relative;
   top: -20px;
-  left: 40%; }
+  left: 40%;
+}
 
 strong {
   color: #306ed6 !important;
-  font-size: 49px; }
+  font-size: 49px;
+}
 
 #montserrat {
   font-family: "Montserrat", sans-serif;
-  color: #143e87; }
+  color: $dark-blue;
+}
 
 #header-hr {
   position: relative;
   width: 100%;
   height: 2px;
-  background-color: darkgray; }
+  background-color: darkgray;
+}
 
 /* search box */
 #search-box {
@@ -88,18 +108,21 @@ strong {
   width: 15%;
   height: 41px;
   top: 22px;
-  color: black; }
+  color: black;
+}
 
 .search-link {
   position: absolute;
-  top: -28px; }
+  top: -28px;
+}
 
 /* body-background image */
 img {
   width: 100%;
   height: 3em;
   position: relative;
-  top: -10px; }
+  top: -10px;
+}
 
 /* radio selector buttons */
 .selector-div {
@@ -111,12 +134,14 @@ img {
   float: left;
   left: 12%;
   margin-right: 25%;
-  border-radius: 0.5em; }
+  border-radius: 0.5em;
+}
 
 .left-filter-pane {
   width: 50%;
   line-height: 5em;
-  color: #306ed6; }
+  color: #306ed6;
+}
 
 .right-filter-pane {
   line-height: 2em;
@@ -124,20 +149,24 @@ img {
   top: 2em;
   float: left;
   display: block;
-  left: 2%; }
+  left: 2%;
+}
 
 #filter {
   display: inline-block;
   position: relative;
-  top: -1em; }
+  top: -1em;
+}
 
 #divider {
   border: none;
   height: 4em;
-  width: 2px; }
+  width: 2px;
+}
 
 .radio-btn {
-  margin-left: 3%; }
+  margin-left: 3%;
+}
 
 .radio-link {
   position: relative;
@@ -146,15 +175,18 @@ img {
   display: inline-block;
   top: -37px;
   float: left;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 #radio {
-  margin-left: 8%; }
+  margin-left: 8%;
+}
 
 /* main section */
 .main-container {
   position: relative;
-  left: 12%; }
+  left: 12%;
+}
 
 .main-section {
   float: left;
@@ -171,10 +203,12 @@ img {
   left: 10%;
   display: block;
   text-align: center;
-  height: 27em; }
+  height: 27em;
+}
 
 .card-top-divider {
-  height: 0.3px; }
+  height: 0.3px;
+}
 
 .email {
   border-style: groove;
@@ -182,42 +216,50 @@ img {
   text-decoration: none;
   padding: 1px;
   margin-left: 14%;
-  width: 67%; }
+  width: 67%;
+}
 
 a {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .business {
   position: relative;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 .business-header {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* card contents */
 .company-name {
   font-family: "ABeeZee", sans-serif;
   text-align: center;
   font-weight: 100;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .phone {
   font-size: 20px;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 .phone-logo {
-  color: #4aa8b8; }
+  color: #4aa8b8;
+}
 
 .business-hours,
 .cant-talk {
   /* text-align: center; */
   font-size: 15px;
   line-height: 21px;
-  height: 2em; }
+  height: 2em;
+}
 
 .certifications {
   height: 8em;
@@ -225,41 +267,44 @@ a {
   width: 75%;
   line-height: 27px;
   margin-left: 12%;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
 /* MEDIA QUERIES */
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait and Landscape */
 @media only screen and (max-width: 667px) and (orientation: portrait) {
   .top-level-links {
-    display: none; }
+    display: none;
+  }
 
   #logo {
-    color: #316fd8;
-    float: left;
-    display: inline-block;
-    line-height: 0em;
-    font-family: "ABeeZee", sans-serif;
+    @include logo-basic-style();
     position: relative;
     left: -26%;
-    letter-spacing: -1px; }
+    letter-spacing: -1px;
+  }
 
   #montserrat {
     font-family: "Montserrat", sans-serif;
-    color: #143e87;
+    color: $dark-blue;
     /* font-size: 40px; */
     letter-spacing: -3px;
     left: -4%;
-    position: relative; }
+    position: relative;
+  }
 
   #search-box {
-    display: none; }
+    display: none;
+  }
 
   #header-hr {
-    top: -8vh; }
+    top: -8vh;
+  }
 
   img {
-    top: -10vh; }
+    top: -10vh;
+  }
 
   .selector-div {
     position: relative;
@@ -274,12 +319,14 @@ a {
     border-color: gray;
     top: 0vh;
     border-style: solid;
-    border-width: 0.5px; }
+    border-width: 0.5px;
+  }
 
   #radio {
     margin-left: 0%;
     top: 19px;
-    left: -5%; }
+    left: -5%;
+  }
 
   .radio-link {
     position: relative;
@@ -292,7 +339,8 @@ a {
     width: 100%;
     text-align: left;
     color: #1c4080;
-    line-height: 15px; }
+    line-height: 15px;
+  }
 
   .left-filter-pane {
     width: 75%;
@@ -303,7 +351,8 @@ a {
     top: -17vh;
     left: 0%;
     font-size: 20px;
-    width: 98%; }
+    width: 98%;
+  }
 
   .right-filter-pane {
     line-height: 0em;
@@ -312,21 +361,25 @@ a {
     float: left;
     display: block;
     left: 3%;
-    height: 28vh; }
+    height: 28vh;
+  }
 
   .navigational {
-    display: none; }
+    display: none;
+  }
 
   #filter {
     display: inline-block;
     position: relative;
-    top: 4px; }
+    top: 4px;
+  }
 
   .number {
     height: 7vh;
     position: relative;
     top: -10vh;
-    left: -13%; }
+    left: -13%;
+  }
 
   .main-section {
     float: left;
@@ -341,10 +394,12 @@ a {
     position: relative;
     display: block;
     text-align: center;
-    height: 79vh; }
+    height: 79vh;
+  }
 
   .phone-div {
-    background-color: #0366d061; }
+    background-color: #0366d061;
+  }
 
   .certifications {
     height: 6em;
@@ -359,18 +414,21 @@ a {
     left: -4%;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
-    background-color: gainsboro; }
+    background-color: gainsboro;
+  }
 
   #myDropdown {
     position: absolute;
     width: 18em;
     float: left;
-    left: -11em; }
+    left: -11em;
+  }
 
   .drop-menu {
     display: inline-block;
     position: absolute;
-    margin-left: 4%; }
+    margin-left: 4%;
+  }
 
   /* ======= drop down button/contents ====== */
   .dropbtn {
@@ -384,28 +442,33 @@ a {
     position: relative;
     float: right;
     left: 4em;
-    height: 5em; }
+    height: 5em;
+  }
 
   /* bars */
   .fa-align-justify:before {
     content: "\f039";
     position: absolute;
-    left: 30%; }
+    left: 30%;
+  }
 
   .fas {
     left: 44px;
     height: 4vh;
     width: 1em;
     padding: 24px;
-    padding-bottom: 31px; }
+    padding-bottom: 31px;
+  }
 
   .dropbtn:hover,
   .dropbtn:focus {
-    background-color: #2980b9; }
+    background-color: #2980b9;
+  }
 
   .dropdown {
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+  }
 
   .dropdown-content {
     display: none;
@@ -414,22 +477,28 @@ a {
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1; }
+    z-index: 1;
+  }
 
   .drop-items {
-    color: red; }
+    color: red;
+  }
 
   .dropdown-content .drop-items {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block; }
+    display: block;
+  }
 
   .dropdown .drop-items:hover {
-    background-color: #ddd; }
+    background-color: #ddd;
+  }
 
   .show {
-    display: block; } }
+    display: block;
+  }
+}
 /* Portrait and Landscape */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .right-filter-pane {
@@ -439,12 +508,14 @@ a {
     float: left;
     display: inline-block;
     left: 6%;
-    width: 100%; }
+    width: 100%;
+  }
 
   .left-filter-pane {
     width: 100%;
     line-height: 5em;
-    color: #306ed6; }
+    color: #306ed6;
+  }
 
   .radio-link {
     position: relative;
@@ -458,15 +529,18 @@ a {
     font-size: 21px;
     border-radius: 1px;
     background-color: #afc5e7;
-    color: #1c4080; }
+    color: #1c4080;
+  }
 
   ul {
-    width: 56%; }
+    width: 56%;
+  }
 
   #radio {
     margin-left: 0%;
     font-size: 21px;
-    width: 28%; }
+    width: 28%;
+  }
 
   #filter {
     display: inline-block;
@@ -474,7 +548,8 @@ a {
     top: -13px;
     left: -13em;
     float: left;
-    font-size: 17px; }
+    font-size: 17px;
+  }
 
   .main-section {
     float: left;
@@ -491,14 +566,17 @@ a {
     left: 10%;
     display: block;
     text-align: center;
-    height: 27em; }
+    height: 27em;
+  }
 
   .email {
-    background-color: #abc5ea; }
+    background-color: #abc5ea;
+  }
 
   .dropbtn,
   .drop-items {
-    display: none; } }
-/*# sourceMappingURL=style.css.map */
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

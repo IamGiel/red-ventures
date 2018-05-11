@@ -23,7 +23,7 @@
 <!-- navigational buttons -->
 <ul class="navigational">
   <li class="nav-buttons-right">
-    <a class="link-color" href="#contact" id="myBtn">Contact</a>
+    <a class="link-color" href="/all/modal/contact" id="contact">Contact</a>
   </li>
   <li class="nav-buttons-right">
     <a class="link-color" href="#about">Services</a>
@@ -56,43 +56,75 @@
 
     <p class="drop-items" href="#home"></p>
     <p class="drop-items" href="#about">Pool &#38; Spas</p>
-    <p class="drop-items" href="#contact">Services</p>
+    <p class="drop-items" href="#services">Services</p>
     <p class="drop-items" href="#home">Resources</p>
     <p class="drop-items" href="#about">Supplies</p>
-    <p class="drop-items" href="#contact" id="myBtn">Contact</p>
+    <p class="drop-items" href="modal/contact" id="contact">Contact</p>
   </div>
 </div>
 
 <!-- hr divider -->
 <hr id="header-hr">
 <!-- image -->
-<img src="/images/poolpro.png" alt="pool water image" width="500" height="377"> {{!--
-<!-- radio selectors -->
-<div class="selector-div">
-  <ul class="radio-selectors">
-    <li class="nav-buttons-right" id="radio">
-      Filter Results
-    </li>
-    <li class="nav-buttons-right" id="radio">
-      <hr id="divider">
-      <!-- an hr vertical divider -->
-    </li>
-    <li class="nav-buttons-right" id="radio">
-      <span id="num-dealers">{{number}}</span> dealers in 28226
-    </li>
-  </ul>
-  <ul class="radio-selectors">
-    <li class="nav-buttons-right radio-btn">
-      <input type="radio" name="gender" value="male" checked> Service
-    </li>
-    <li class="nav-buttons-right radio-btn">
-      <input type="radio" name="gender" value="male" checked> Installation
-    </li>
-    <li class="nav-buttons-right radio-btn">
-      <input type="radio" name="gender" value="male" checked> Rental
-    </li>
-    <li class="nav-buttons-right radio-btn">
-      <input type="radio" name="gender" value="male" checked> Commercial
-    </li>
-  </ul>
-</div> --}}
+<img src="/images/poolpro.png" alt="pool water image" width="500" height="377">
+
+
+{{!-- adding modal here instead --}}
+
+{{!--
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button> --}}
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    {{!-- form content --}}
+
+    <div class="containers">
+      <form action="/">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Currently own pool or spa?</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="australia">Yes</option>
+              <option value="canada">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Comments or Questions ✏️</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

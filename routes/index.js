@@ -145,4 +145,8 @@ router.get("/installation", (req, res, next) => {
   });
 });
 
+router.get("/contact", (req, res, next) => {
+  res.render("businesses/contact");
+});
+
 module.exports = router;

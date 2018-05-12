@@ -115,16 +115,17 @@ img {
 
 .left-filter-pane {
   width: 50%;
-  line-height: 5em;
+  line-height: 9vh;
   color: #306ed6; }
 
 .right-filter-pane {
-  line-height: 2em;
+  line-height: 5em;
   position: relative;
-  top: 2em;
+  top: 0em;
   float: left;
   display: block;
-  left: 2%; }
+  left: 2%;
+  height: 2vh; }
 
 #filter {
   display: inline-block;
@@ -406,9 +407,13 @@ input[type="submit"] {
     width: 98%; }
 
   .right-filter-pane {
-    line-height: 0em;
+    line-height: 5em;
     position: relative;
+    top: 0em;
     float: left;
+    display: block;
+    left: 2%;
+    height: 2vh;
     top: -2em;
     display: block;
     left: 3%;
@@ -422,11 +427,15 @@ input[type="submit"] {
     position: relative;
     top: 4px; }
 
-  .number {
+  .nav-buttons-right-number {
     height: 7vh;
     position: relative;
     top: -10vh;
-    left: -13%; }
+    left: -13%;
+    font-size: 20px; }
+
+  #num-dealers {
+    font-size: 20px !important; }
 
   .main-section {
     float: left;
@@ -548,18 +557,18 @@ input[type="submit"] {
     display: block; } }
 /* Portrait and Landscape */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .right-filter-pane {
-    line-height: 0em;
+  #divider {
+    border: none;
+    height: 1em;
+    width: 2px;
     position: relative;
-    float: left;
-    top: 0em;
-    display: inline-block;
-    left: 2%;
-    width: 100%; }
+    background-color: #009688;
+    top: 4vh;
+    left: 1em; }
 
   .left-filter-pane {
-    width: 100%;
-    line-height: 5em;
+    width: 43%;
+    line-height: 14vh;
     color: #306ed6; }
 
   .radio-link {
@@ -568,27 +577,28 @@ input[type="submit"] {
     display: inline-block;
     float: left;
     color: #1c4080;
-    left: -4%;
-    top: -7px !important;
-    font-size: 14px;
-    margin-left: 4%;
-    font-size: 21px;
-    border-radius: 1px;
-    background-color: #afc5e7; }
+    left: 62%;
+    top: -14vh !important;
+    height: 3vh;
+    margin-left: -2%;
+    font-size: 17px;
+    width: 4em; }
 
   ul {
     width: 56%; }
 
   #radio {
-    margin-left: 0%;
-    font-size: 21px;
-    width: 28%; }
+    margin-left: 1%;
+    font-size: 19px;
+    width: 87%;
+    position: absolute;
+    left: 2em; }
 
   #filter {
     display: inline-block;
     position: relative;
     top: -13px;
-    left: -13em;
+    left: 10em;
     float: left;
     font-size: 17px; }
 

@@ -643,7 +643,11 @@ input[type="submit"] {
     color: red;
   }
   .drp-dwn-closer {
-    font-size: 2em;
+    font-size: 4em;
+    color: white;
+    position: relative;
+    left: 14px;
+    float: left;
   }
 
   .dropdown-content .drop-items {

@@ -463,9 +463,9 @@ input[type="submit"] {
 
   #myDropdown {
     position: absolute;
-    width: 18em;
+    width: 20em;
     float: left;
-    left: -11em;
+    left: -12em;
     background-color: #0d6d9c; }
 
   .drop-menu {

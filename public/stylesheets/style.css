@@ -272,7 +272,9 @@ a {
   cursor: pointer; }
 
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -286,7 +288,7 @@ label {
   display: inline-block; }
 
 /* Style the submit button */
-input[type=submit] {
+input[type="submit"] {
   background-color: #316fd8;
   color: white;
   padding: 12px 20px;
@@ -321,7 +323,9 @@ input[type=submit] {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0; } }
 /* MEDIA QUERIES */
@@ -461,7 +465,8 @@ input[type=submit] {
     position: absolute;
     width: 18em;
     float: left;
-    left: -11em; }
+    left: -11em;
+    background-color: #0d6d9c; }
 
   .drop-menu {
     display: inline-block;
@@ -515,14 +520,26 @@ input[type=submit] {
   .drop-items {
     color: red; }
 
+  .drp-dwn-closer {
+    font-size: 30px; }
+
   .dropdown-content .drop-items {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block; }
+    display: block;
+    font-size: 42px;
+    color: white; }
+
+  .h4 {
+    width: 7em;
+    text-align: center;
+    background-color: #1c4080;
+    border-style: solid;
+    border-color: lightblue; }
 
   .dropdown .drop-items:hover {
-    background-color: #ddd; }
+    background-color: #03a9f49e; }
 
   .show {
     display: block; } }
@@ -534,7 +551,7 @@ input[type=submit] {
     float: left;
     top: 0em;
     display: inline-block;
-    left: 6%;
+    left: 2%;
     width: 100%; }
 
   .left-filter-pane {

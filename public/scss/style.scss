@@ -300,46 +300,48 @@ a {
 
 /* (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 // ========== styling for the contact form ==========
 
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -355,8 +357,8 @@ label {
 }
 
 /* Style the submit button */
-input[type=submit] {
-  background-color:$light-blue;
+input[type="submit"] {
+  background-color: $light-blue;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -395,7 +397,9 @@ input[type=submit] {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }
@@ -533,6 +537,7 @@ input[type=submit] {
     width: 18em;
     float: left;
     left: -11em;
+    background-color: #0d6d9c;
   }
 
   .drop-menu {
@@ -594,16 +599,29 @@ input[type=submit] {
   .drop-items {
     color: red;
   }
+  .drp-dwn-closer {
+    font-size: 30px;
+  }
 
   .dropdown-content .drop-items {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 42px;
+    color: white;
+  }
+
+  .h4 {
+    width: 7em;
+    text-align: center;
+    background-color: #1c4080;
+    border-style: solid;
+    border-color: lightblue;
   }
 
   .dropdown .drop-items:hover {
-    background-color: #ddd;
+    background-color: #03a9f49e;
   }
 
   .show {
@@ -616,7 +634,7 @@ input[type=submit] {
     @include right-filter-basic();
     top: 0em;
     display: inline-block;
-    left: 6%;
+    left: 2%;
     width: 100%;
   }
 
@@ -675,5 +693,3 @@ input[type=submit] {
     display: none;
   }
 }
-
-

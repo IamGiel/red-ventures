@@ -187,13 +187,21 @@ img {
 #filter {
   display: inline-block;
   position: relative;
-  top: -1em;
+  top: -1vh;
+  left: -1em;
+}
+.nav-buttons-right-number {
+  font-size: 26px !important;
 }
 
 #divider {
-  border: none;
-  height: 4em;
-  width: 2px;
+  border: solid;
+  height: 3em;
+  width: 0px;
+  position: absolute;
+  /* color: #009688; */
+  background-color: #009688;
+  top: 1vh;
 }
 
 .radio-btn {
@@ -212,6 +220,13 @@ img {
 
 #radio {
   margin-left: 8%;
+  font-size: 14px;
+}
+
+.nav-buttons-right-number {
+  font-size: 20px;
+  position: relative;
+  left: 4em;
 }
 
 /* main section */
@@ -449,11 +464,23 @@ input[type="submit"] {
     width: 100%;
     height: 19em !important;
   }
+  #divider {
+    border: solid;
+    height: 4vh;
+    width: 0px;
+    position: absolute;
+    /* color: #009688; */
+    background-color: #009688;
+    top: 6vh;
+    left: 216px;
+  }
 
   #radio {
     margin-left: 0%;
-    top: 19px;
-    left: -5%;
+    top: 6vh;
+    left: 5%;
+    font-size: 20px;
+    line-height: 10vh;
   }
 
   .radio-link {
@@ -492,7 +519,9 @@ input[type="submit"] {
   #filter {
     display: inline-block;
     position: relative;
-    top: 4px;
+    top: 25px;
+    left: 2px;
+    font-size: 23px;
   }
 
   .nav-buttons-right-number {
@@ -503,7 +532,7 @@ input[type="submit"] {
     font-size: 20px;
   }
   #num-dealers {
-    font-size: 20px !important;
+    font-size: 29px !important;
   }
 
   .main-section {
@@ -634,14 +663,19 @@ input[type="submit"] {
     display: block;
   }
 }
-/* Portrait and Landscape */
+/* Portrait and Landscape IPAD */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .right-filter-pane {
-    // @include right-filter-basic();
-    // top: 0em;
-    // display: inline-block;
-    // left: 2%;
-    // width: 100%;
+    @include right-filter-basic();
+    top: 0em;
+    display: inline-block;
+    left: -17%;
+    width: 100%;
+  }
+  .dealer {
+    position: relative;
+    top: 0vh;
+    font-size: 18px;
   }
   #divider {
     border: none;

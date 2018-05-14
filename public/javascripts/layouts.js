@@ -1,9 +1,9 @@
 // Iphone 6^ toggle button
 // toggle between hiding and showing the dropdown content */
 
-var openBtn = document.getElementsByClassName("dropbtn");
-var closeBtn = document.getElementsByClassName("drp-dwn-closer");
-var dropDwnContent = document.getElementsByClassName("dropdown-content");
+const openBtn = document.getElementsByClassName("dropbtn");
+const closeBtn = document.getElementsByClassName("drp-dwn-closer");
+const dropDwnContent = document.getElementsByClassName("dropdown-content");
 $(openBtn).on("click", function() {
   console.log("opened");
   $(dropDwnContent).show();
@@ -15,25 +15,23 @@ $(closeBtn).on("click", function() {
 
 // ======= modal for laptop screens=======
 // Get the modal
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 $(modal).hide();
 // Get the button that opens the modal
-var btn = document.getElementById("contact");
+const btn = document.getElementById("contact");
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 $(btn).on("click", ()=>{
-  console.log('you clicked contact');
   $(modal).show();
 })
 // ======= modal for iphone6^ screens=======
 // Get the button that opens the modal
-var drpDown = document.getElementById("drop-contact");
+const drpDown = document.getElementById("drop-contact");
 
 // When the user clicks on the button, open the modal
 $(drpDown).on("click", () => {
-  console.log("you clicked contact");
   $(modal).show();
 });
 
@@ -49,4 +47,19 @@ window.onclick = function() {
     modal.style.display = "none";
   }
 };
+
+const fname = document.getElementsByClassName("fname");
+const lname = document.getElementsByClassName("lname");
+const selection = document.getElementsByClassName("selection");
+const textarea = document.getElementsByClassName("textarea");
+const submitBtn = document.getElementsByClassName("submit");
+
+
+
+$(submitBtn).on("click", (event)=>{
+  event.preventDefault();
+  console.log(fname.val());
+})
+
+
 

@@ -348,7 +348,7 @@ input[type="submit"] {
     margin-top: 0; } }
 /* MEDIA QUERIES */
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
+/* Portrait */
 @media only screen and (max-width: 667px) and (orientation: portrait) {
   .top-level-links {
     display: none; }
@@ -596,7 +596,186 @@ input[type="submit"] {
 
   .show {
     display: block; } }
-/* Portrait and Landscape IPAD */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Landscape */
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+  #pool-pros {
+    position: relative;
+    top: -20px;
+    left: 10%; }
+
+  .dealer {
+    position: relative;
+    left: -2em;
+    height: 3em;
+    width: 6em; }
+
+  .selector-div {
+    position: relative;
+    display: block;
+    height: 20%;
+    background-color: #e8e8e8;
+    float: left;
+    margin-right: 25%;
+    border-radius: 0.5em;
+    left: 9%;
+    width: 82%; }
+
+  .left-filter-pane {
+    width: 25em;
+    line-height: 9vh;
+    color: #306ed6; }
+
+  #divider {
+    height: 4em;
+    width: 0px;
+    position: absolute;
+    /* color: #009688; */
+    background-color: #009688;
+    top: 1vh;
+    left: 17em; }
+
+  #filter {
+    display: inline-block;
+    position: relative;
+    top: -1vh;
+    left: 1em;
+    font-size: 20px; }
+
+  .right-filter-pane {
+    line-height: 5em;
+    position: relative;
+    top: 0em;
+    float: left;
+    display: block;
+    left: 5%;
+    height: 17vh; }
+
+  .link-color,
+  #search-box {
+    color: #143e87;
+    display: none; }
+
+  .fas {
+    left: 7em !important;
+    height: 6vh;
+    width: 1em;
+    padding: 22px;
+    padding-bottom: 31px; }
+
+  .fa-align-justify:before {
+    content: "\f039";
+    position: absolute;
+    left: 30%;
+    top: 4vh; }
+
+  .main-section {
+    float: left;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 29%;
+    max-width: 650px;
+    padding: 27px;
+    margin-top: 2%;
+    margin-left: 27px;
+    left: 6%;
+    height: 30em; }
+
+  .email {
+    border-style: groove;
+    border-color: #65c9ca;
+    text-decoration: none;
+    padding: 1px;
+    margin-left: -5%;
+    width: 109%;
+    font-size: 22px; }
+
+  /* ======= drop down button/contents ====== */
+  .dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 18px;
+    margin-bottom: 9vh;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    left: 4em;
+    height: 5em;
+    top: -17vh; }
+
+  /* bars */
+  .fa-align-justify:before {
+    content: "\f039";
+    position: absolute;
+    left: 30%; }
+
+  .fas {
+    left: 44px;
+    height: 4vh;
+    width: 1em;
+    padding: 24px;
+    padding-bottom: 31px; }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #2980b9; }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    height: 1vh; }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+
+  .drop-items {
+    color: red; }
+
+  .drp-dwn-closer {
+    font-size: 4em;
+    color: white;
+    position: relative;
+    left: 14px;
+    float: left; }
+
+  .dropdown-content .drop-items {
+    color: black;
+    padding: 5px 21px;
+    text-decoration: none;
+    display: block;
+    font-size: 42px;
+    color: white;
+    height: 1em;
+    position: relative;
+    top: 3vh;
+    /* background-color: lightblue; */ }
+
+  .h4 {
+    width: 7em;
+    text-align: center;
+    background-color: #1c4080;
+    border-style: solid;
+    border-color: lightblue; }
+
+  .dropdown .drop-items:hover {
+    background-color: #03a9f49e; }
+
+  .show {
+    display: block; } }
+/* Portrait IPAD */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .right-filter-pane {
     line-height: 5em;

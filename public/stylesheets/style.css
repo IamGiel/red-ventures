@@ -397,7 +397,7 @@ input[type="submit"] {
 
   .dealer {
     position: relative;
-    top: -1vh;
+    top: 2vh;
     line-height: 5vh; }
 
   #divider {
@@ -775,90 +775,123 @@ input[type="submit"] {
 
   .show {
     display: block; } }
-/* Portrait IPAD */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .right-filter-pane {
-    line-height: 5em;
+/* portrait IPAD */
+@media only screen and (min-width: 668px) and (max-width: 768px) and (orientation: portrait) {
+  .selector-div {
     position: relative;
-    top: 0em;
-    float: left;
     display: block;
-    left: 2%;
-    height: 2vh;
-    top: 0em;
-    display: inline-block;
-    left: -17%;
+    height: 20%;
+    background-color: #e8e8e8;
+    float: left;
+    margin-right: 25%;
+    border-radius: 0.5em;
+    left: 0%;
     width: 100%; }
 
   .dealer {
     position: relative;
-    top: 0vh;
-    font-size: 18px; }
-
-  #divider {
-    border: none;
-    height: 1em;
-    width: 2px;
-    position: relative;
-    background-color: #009688;
-    top: 4vh;
-    left: 1em; }
-
-  .left-filter-pane {
-    width: 43%;
-    line-height: 14vh;
-    color: #306ed6; }
+    top: 1vh;
+    left: -35%;
+    width: 50%;
+    line-height: 5vh; }
 
   .radio-link {
     position: relative;
+    left: 44%;
     top: 1em;
     display: inline-block;
+    top: -11vh;
     float: left;
-    color: #1c4080;
-    left: 62%;
-    top: -14vh !important;
-    height: 3vh;
-    margin-left: -2%;
-    font-size: 17px;
-    width: 4em; }
-
-  ul {
-    width: 56%; }
-
-  #radio {
-    margin-left: 1%;
-    font-size: 19px;
-    width: 87%;
-    position: absolute;
-    left: 2em; }
-
-  #filter {
-    display: inline-block;
-    position: relative;
-    top: -13px;
-    left: 10em;
-    float: left;
-    font-size: 17px; }
+    font-size: 14px; }
 
   .main-section {
+    float: left;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 20%;
+    max-width: 650px;
+    padding: 27px;
+    margin-top: 2%;
+    margin-left: 27px;
+    left: 0;
+    height: 37em; }
+
+  #pool-pros {
+    position: relative;
+    top: -20px;
+    left: 0%; }
+
+  .top-links {
+    position: relative;
+    top: -1vh;
+    display: block;
+    width: 33em; }
+
+  #search-box {
+    border-style: groove;
+    border-color: #4979d2;
+    position: absolute;
+    display: inline-block;
+    float: right;
+    left: 69%;
+    width: 27%;
+    height: 7vh;
+    top: 7vh;
+    color: black; }
+
+  .email {
+    border-style: groove;
+    border-color: #65c9ca;
+    text-decoration: none;
+    padding: 2px;
+    margin-left: 14%;
+    width: 67%;
+    margin-top: 2em; } }
+/* landscape IPAD */
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .dealer {
+    position: relative;
+    top: 1vh;
+    left: -4em; }
+
+  .right-filter-pane {
+    line-height: 5em;
+    position: relative;
+    top: -2em;
+    float: left;
+    display: block;
+    left: 13em;
+    height: 2vh; }
+
+  .main-section {
+    float: left;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 31%;
+    max-width: 650px;
+    padding: 27px;
+    margin-top: 2%;
+    margin-left: 27px;
+    left: 9%;
+    height: 27em; }
+
+  #logo {
     color: #316fd8;
     float: left;
     display: inline-block;
     line-height: 0em;
     font-family: "ABeeZee", sans-serif;
-    width: 33.33%;
-    padding: 11px;
-    margin-top: 2%;
-    margin-left: 27px;
-    left: 10%;
-    height: 27em;
-    line-height: 4vh; }
-
-  .email {
-    background-color: #abc5ea; }
-
-  .dropbtn,
-  .drop-items {
-    display: none; } }
+    position: relative;
+    left: -4em; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -425,7 +425,7 @@ input[type="submit"] {
 /* MEDIA QUERIES */
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait */
-@media only screen and (max-width: 667px) and (orientation: portrait) {
+@media only screen and (max-width: 400px) and (orientation: portrait) {
   .top-level-links {
     display: none;
   }
@@ -466,11 +466,11 @@ input[type="submit"] {
     border-style: solid;
     border-width: 0.5px;
     width: 100%;
-    height: 19em !important;
+    height: 23em !important;
   }
   .dealer {
     position: relative;
-    top: 2vh;
+    top: 0vh;
     line-height: 5vh;
   }
 
@@ -693,7 +693,7 @@ input[type="submit"] {
     height: 3em;
     width: 6em;
   }
-  .selector-div {
+ .selector-div {
     position: relative;
     display: block;
     height: 20%;
@@ -701,9 +701,9 @@ input[type="submit"] {
     float: left;
     margin-right: 25%;
     border-radius: 0.5em;
-    left: 9%;
-    width: 82%;
-  }
+    left: 0%;
+    width: 100%;
+}
 
   .left-filter-pane {
     width: 25em;
@@ -728,15 +728,15 @@ input[type="submit"] {
     font-size: 20px;
   }
 
-  .right-filter-pane {
+ .right-filter-pane {
     line-height: 5em;
     position: relative;
-    top: 0em;
+    top: -49px;
     float: left;
     display: block;
-    left: 5%;
-    height: 17vh;
-  }
+    left: 14em;
+    height: 2vh;
+}
 
   .link-color,
   #search-box {
@@ -783,6 +783,21 @@ input[type="submit"] {
     width: 109%;
     font-size: 22px;
   }
+  .radio-link {
+    position: relative;
+    left: -7%;
+    top: 1em;
+    display: inline-block;
+    top: -37px;
+    float: left;
+    font-size: 14px;
+}
+a {
+    display: block;
+    text-align: center;
+    padding: 14px 6px;
+    text-decoration: none;
+}
   /* ======= drop down button/contents ====== */
   .dropbtn {
     background-color: #3498db;
